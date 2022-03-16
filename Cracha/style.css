@@ -82,11 +82,17 @@ a {
 }
 
 p {
-  margin-top: 2rem;
+  margin-top: 1rem;
+}
+
+.qrcode {
+  height: 5rem;
+  width: 5rem;
+  padding: 0;
 }
 
 ul {
-  margin-top: 4rem;
+  margin-top: 1rem;
   list-style: none;
   padding: 0;
   display: flex;
