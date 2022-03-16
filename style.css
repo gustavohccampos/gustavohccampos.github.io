@@ -54,7 +54,7 @@ body {
 }
 
 .title {
-  font: 700 var(--title-font-size) var(--title-font);
+  font: 600 var(--title-font-size) var(--title-font);
   color: var(--title-color);
   -webkit-font-smoothing: auto;
 }
@@ -105,7 +105,7 @@ body {
 }
 
 .section {
-  padding: 4.5rem;
+  padding: 4rem;
 }
 
 .section .title {
@@ -369,6 +369,12 @@ nav.show div.icon-close {
   margin-bottom: 0.75rem;
 }
 
+.portifolio_img {
+  height: 15rem;
+  width: 15rem;
+  object-fit: fill;
+}
+
 /*====  TESTIMONIALS ============================ */
 #testimonials {
   background: white;
@@ -542,7 +548,7 @@ footer .social a:hover {
   }
 
   .section {
-    padding: 10rem 0;
+    padding: 5.5rem 0;
   }
 
   .section header,
