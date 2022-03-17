@@ -1,0 +1,102 @@
+/*====  RESET ============================ */
+
+body {
+  font-family: 'OpenSans', sans-serif;
+}
+
+/*====  VARIAVEIS ============================ */
+:root {
+  --base-color: #3890a8;
+  --base-color2: #2ca9cc;
+}
+
+/*====  Cabecalho ============================ */
+
+.cabecalho {
+  background-color: var(--base-color);
+  width: 100%;
+  position: absolute;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+
+  border-bottom: 1px solid #418fa5;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.cabecalho nav {
+  text-align: center;
+}
+
+.cabecalho_logo {
+}
+
+.cabecalho ul {
+  margin-top: 1rem;
+}
+
+.cabecalho ul li {
+  font-size: 1.1rem;
+
+  display: inline-block;
+
+  margin-right: 0.7rem;
+  margin-bottom: 0.5rem;
+  margin-left: 0.7rem;
+  color: #ffffff;
+}
+
+main {
+}
+
+.chamada {
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 2;
+  top: 7.9rem;
+  background-color: var(--base-color);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: #fff;
+  text-align: center;
+
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #043644;
+}
+
+.chamada h1 {
+  font-family: 'Montserrat', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  margin-bottom: 1.5rem;
+}
+
+.chamada p {
+  font-size: 1.25rem;
+  line-height: normal;
+
+  margin: 0 auto 2.5rem;
+}
+
+.chamada a {
+  width: 10rem;
+  height: 1.5rem;
+  border: solid 1px black;
+  background-color: #30a0be;
+  padding: 0.3rem;
+}
