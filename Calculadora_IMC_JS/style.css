@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* HSL color mode */
+  --base-color: rgba(255, 174, 0, 0.616);
+  --body-color: rgb(122, 122, 122);
+  --fundo: rgba(255, 255, 255, 0.452);
+
+  /* fonts */
+  --title-font: 10rem;
+  --title-color: rgb(3, 3, 3);
+
+  --subtitle-font-size: 1rem;
+
+  --title-font: 'Poppins', sans-serif;
+  --body-font: 'DM Sans', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font: 400 1rem var(--body-font);
+  color: var(--text-color);
+  background: var(--body-color);
+  -webkit-font-smoothing: antialiased;
+}
+
+header {
+  background-color: var(--base-color);
+  width: 100%;
+  height: 6rem;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.divtitulo {
+  width: 100%;
+  padding: 2px;
+}
+
+.titulo {
+  font: 400 2rem var(--title-font);
+  color: var(--title-color);
+  text-align: center;
+}
+
+.formulario {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(235, 232, 232);
+}
+
+.formulario p {
+  font: 400 1.2rem var(--body-font);
+  font-weight: bold;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 10px;
+}
+
+.formulario input {
+  width: 150px;
+  height: 25px;
+  margin-left: 5px;
+  display: block;
+  border-radius: 2px;
+  border: 2px solid var(--base-color);
+  box-shadow: 2px 2px 0px var(--base-color);
+  font: 400 1.2rem var(--body-font);
+  font-weight: bold;
+}
+
+.formulario button {
+  width: 150px;
+  height: 35px;
+  background-color: var(--base-color);
+  color: var(--title-color);
+  font: 400 1.2rem var(--body-font);
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.resultado {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.resultados {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.resultados p {
+  margin-right: 10px;
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+.resultados button {
+  width: 4rem;
+  height: 2rem;
+  background-color: var(--base-color);
+  color: var(--title-color);
+  border-radius: 10px;
+}
+
+.resultadoimc {
+  background-color: var(--fundo);
+  border: 2px solid rgb(187, 186, 186);
+  box-shadow: 2px 2px 2px 2px;
+  margin-bottom: 1rem;
+  padding: 1rem 2rem;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
