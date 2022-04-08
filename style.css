@@ -23,15 +23,17 @@ img {
   --header-height: 4.5rem;
 
   /* colors */
-  --hue: 270;
-  /* HSL color mode */
-  --base-color: hsl(var(--hue) 36% 57%);
-  --base-color-second: hsl(var(--hue) 65% 88%);
-  --base-color-alt: hsl(var(--hue) 57% 53%);
-  --title-color: hsl(var(--hue) 41% 10%);
-  --text-color: hsl(0 0% 46%);
-  --text-color-light: hsl(0 0% 98%);
-  --body-color: hsl(0 0% 98%);
+
+  --base-color:rgb(0, 0, 0);
+  --base-color-second: rgb(216, 0, 0);
+  --base-color-alt:  rgb(0, 65, 187);
+  --button-color: rgb(0, 0, 0);
+  --title-color: rgb(0, 65, 187);
+  --text-color: rgb(0, 0, 0);
+
+  --text-color-light:rgb(0, 65, 187);
+  --body-color:  rgb(255, 255, 255);
+  --header-color: rgb(236, 236, 236);
 
   /* fonts */
   --title-font-size: 1.875rem;
@@ -60,7 +62,7 @@ body {
 }
 
 .button {
-  background-color: var(--base-color);
+  background-color: var(--button-color);
   color: var(--text-color-light);
   height: 3.5rem;
   display: inline-flex;
@@ -69,6 +71,7 @@ body {
   border-radius: 0.25rem;
   font: 500 1rem var(--body-font);
   transition: background 0.3s;
+  color: white;
 }
 
 .button:hover {
@@ -105,7 +108,7 @@ body {
 }
 
 .section {
-  padding: 4rem;
+  padding: 2rem;
 }
 
 .section .title {
@@ -128,12 +131,11 @@ body {
   border-bottom: 1px solid #e4e4e4;
   margin-bottom: 2rem;
   display: flex;
-
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
-  background-color: var(--body-color);
+  background-color: var(--header-color);
   width: 100%;
 }
 
@@ -162,6 +164,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  font-weight: bold;
 }
 
 nav ul li {
@@ -257,52 +260,6 @@ nav.show div.icon-close {
   top: 1.5rem;
 }
 
-/*====  HOME ============================ */
-#home {
-  overflow: hidden;
-}
-
-#home .container {
-  margin: 0;
-}
-
-#home .image {
-  position: relative;
-}
-
-#home .image::before {
-  content: '';
-  height: 100%;
-  width: 100%;
-  background: var(--text-color-light);
-  position: absolute;
-  top: -16.8%;
-  left: 16.7%;
-  z-index: 0;
-}
-
-#home .image img {
-  position: relative;
-}
-
-#home .image img,
-#home .image::before {
-  border-radius: 0.25rem;
-}
-
-#home .text {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-  text-align: center;
-}
-
-#home .text h1 {
-  margin-bottom: 1rem;
-}
-
-#home .text p {
-  margin-bottom: 2rem;
-}
 
 /*====  ABOUT ============================ */
 #about {
@@ -311,24 +268,34 @@ nav.show div.icon-close {
 
 #about .container {
   margin: 0;
+text-align: justify;
+ margin-top: 4rem;
 }
 
 #about .image {
+display: flexbox;
+  height: 100%;
+  width:100%;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+}
+
+#about .image::before {
   position: relative;
   height: 100%;
   width: 100%;
 }
 
-#about .image::before {
-  position: absolute;
-  left: -33%;
-  z-index: 0;
-}
-
 #about .image img {
+  margin-top: 1rem;
   position: relative;
-  height: 12rem;
-  width: 12rem;
+  height: 15rem;
+  width: 15rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;;
 }
 
 #about .image img,
@@ -336,9 +303,24 @@ nav.show div.icon-close {
   border-radius: 15rem;
 }
 
+#about .curriculo{
+  text-align: center;
+
+}
+
+#about a{
+  color: white ;
+}
+
 #about .text {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+
+}
+
+.title{
+font-size: 2rem;
+text-align: center;
 }
 
 /*====  SERVICES ============================ */
@@ -352,6 +334,7 @@ nav.show div.icon-close {
   border-bottom: 0.25rem solid var(--base-color);
   border-radius: 0.25rem 0.25rem 0 0;
   text-align: center;
+  background-color: #eee;
 }
 
 .card i {
@@ -366,10 +349,20 @@ nav.show div.icon-close {
   margin-bottom: 0.75rem;
 }
 
+.card:hover{
+  margin: 4px 4px 4px 4px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
 .portifolio_img {
   height: 15rem;
   width: 15rem;
   object-fit: cover;
+}
+
+#services{
+  background-color: rgb(224, 224, 224);
 }
 
 /*====  TESTIMONIALS ============================ */
@@ -443,6 +436,9 @@ nav.show div.icon-close {
 /*====  CONTACT ============================ */
 #contact .grid {
   gap: 4rem;
+}
+#contact {
+  background-color: rgb(224, 224, 224);
 }
 
 #contact .text p {
@@ -545,7 +541,7 @@ footer .social a:hover {
   }
 
   .section {
-    padding: 5.5rem 0;
+    padding: 4rem 0;
   }
 
   .section header,
