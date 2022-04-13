@@ -14,7 +14,7 @@ var count = 0
 //transformar a palavra em array
 var parray = {}
 
-fetch('palavras.txt')
+fetch('teste.js')
   .then(response => response.text())
   .then(text => {
     const array = text.split('\r\n')
