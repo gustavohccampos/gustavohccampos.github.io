@@ -36,7 +36,7 @@ fetch('palavras.txt')
     palavra = array[aleatorio].substring(0, index)
 
     //monta o campo das letras para preencher
-    contarLetras(palavra, count, parray)
+    contarLetras(palavraIngles, count, parray)
   })
 
 //LER a Tecla digitada
