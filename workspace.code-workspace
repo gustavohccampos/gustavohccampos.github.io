@@ -1,0 +1,14 @@
+{
+  "folders": [
+	{
+		"name": "gustavohccampos.github.io",
+		"path": "."
+	},
+	{
+		"path": "..\\..\\..\\..\\..\\Front_end"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "gustavohccampos.github.io"
+  }
+}
