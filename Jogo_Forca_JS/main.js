@@ -14,14 +14,14 @@ var count = 0
 //transformar a palavra em array
 var parray = {}
 
-fetch('teste.json')
+fetch('palavras.txt')
   .then(response => response.text())
   .then(text => {
     const array = text.split('\r\n')
     let tamanho = array.length
 
     var aleatorio = ~~(Math.random() * tamanho)
-    console.log(array)
+
     let index = array[aleatorio].indexOf(',')
 
     document.getElementById('palavra').innerHTML =
@@ -37,17 +37,6 @@ fetch('teste.json')
 
     //monta o campo das letras para preencher
     contarLetras(palavra, count, parray)
-
-    console.log(
-      'palavra:' +
-        array[aleatorio].substring(0, index) +
-        ' - palavra ingles:' +
-        palavraIngles +
-        ' - length:' +
-        palavraIngles.length +
-        ' - parray:' +
-        parray
-    )
   })
 
 //LER a Tecla digitada
