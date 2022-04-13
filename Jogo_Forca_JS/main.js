@@ -14,31 +14,6 @@ var count = 0
 //transformar a palavra em array
 var parray = {}
 
-fetch('palavras.txt')
-  .then(response => response.text())
-  .then(text => {
-    const array = text.split('\r\n')
-    let tamanho = array.length
-
-    var aleatorio = ~~(Math.random() * tamanho)
-
-    let index = array[aleatorio].indexOf(',')
-
-    document.getElementById('palavra').innerHTML =
-      '<div id="palavra">A palavra é: <p>' +
-      array[aleatorio].split(',', 1) +
-      '</p>'
-    ;('</div>')
-
-    palavraIngles = array[aleatorio].substring(index + 1)
-    parray = palavraIngles.split('')
-    count = parray.length
-    palavra = array[aleatorio].substring(0, index)
-
-    //monta o campo das letras para preencher
-    contarLetras(palavraIngles, count, parray)
-  })
-
 //LER a Tecla digitada
 document.onkeypress = function (e) {
   keypress = keyPressed(e)
@@ -63,7 +38,43 @@ function keyPressed(e) {
 
 //funcao reiniciar o jogo
 function reiniciar() {
-  window.location.reload()
+  for (var i = 0; i < parray.length; i++) {
+    var elemento = document.querySelector('#letra' + i)
+    elemento.parentNode.removeChild(elemento)
+  }
+  palavra = ''
+  palavraIngles = ''
+  parray = []
+  count = 0
+  erro = 0
+  document.getElementById('forca').innerHTML = '<img src="forca.png" />'
+  document.getElementById('mensagemFim').textContent = ''
+  document.getElementById('mensagemOk').textContent = ''
+
+  fetch('palavras.txt')
+    .then(response => response.text())
+    .then(text => {
+      const array = text.split('\r\n')
+      let tamanho = array.length
+
+      var aleatorio = ~~(Math.random() * tamanho)
+
+      let index = array[aleatorio].indexOf(',')
+
+      document.getElementById('palavra').innerHTML =
+        '<div id="palavra">A palavra é: <p>' +
+        array[aleatorio].split(',', 1) +
+        '</p>'
+      ;('</div>')
+
+      palavraIngles = array[aleatorio].substring(index + 1)
+      parray = palavraIngles.split('')
+      count = parray.length
+      palavra = array[aleatorio].substring(0, index)
+
+      //monta o campo das letras para preencher
+      contarLetras(palavraIngles, count, parray)
+    })
 }
 
 //funcao para contar as letras que a palavra possui
