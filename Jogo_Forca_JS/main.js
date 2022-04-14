@@ -52,7 +52,7 @@ function reiniciar() {
   document.getElementById('mensagemFim').textContent = ''
   document.getElementById('mensagemOk').textContent = ''
 
-  fetch('palavras.txt')
+  fetch('teste.json')
     .then(response => response.text())
     .then(text => {
       const array = text.split('\r\n')
