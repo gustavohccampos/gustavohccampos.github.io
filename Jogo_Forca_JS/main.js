@@ -8,13 +8,8 @@ let iniciado = 0;
 var palavra = '';
 var palavraIngles = '';
 
-<<<<<<< HEAD
 //contar quantida;de de letras da palavra
-var count = 0
-=======
-//contar quantidade de letras da palavra
 var count = 0;
->>>>>>> 13b86b3687fccd8ed64065ea0c8d98ffdc2bec17
 
 //transformar a palavra em array
 var parray = {};
