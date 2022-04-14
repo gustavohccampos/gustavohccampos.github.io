@@ -8,7 +8,7 @@ let iniciado = 0
 var palavra = ''
 var palavraIngles = ''
 
-//contar quantidade de letras da palavra
+//contar quantida;de de letras da palavra
 var count = 0
 
 //transformar a palavra em array
@@ -65,8 +65,7 @@ function reiniciar() {
       document.getElementById('palavra').innerHTML =
         '<div id="palavra">A palavra é: <p>' +
         array[aleatorio].split(',', 1) +
-        '</p>'
-      ;('</div>')
+        '</p></div>'
 
       palavraIngles = array[aleatorio].substring(index + 1)
       parray = palavraIngles.split('')
