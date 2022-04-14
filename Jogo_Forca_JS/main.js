@@ -2,7 +2,7 @@
 let erro = 0
 
 //validar se jogo esta iniciado
-let iniciado = 1
+let iniciado = 0
 
 //pegar a palavra
 var palavra = ''
@@ -47,7 +47,8 @@ function reiniciar() {
   parray = []
   count = 0
   erro = 0
-  document.getElementById('forca').innerHTML = '<img src="forca.png" />'
+  iniciado = 1
+  document.getElementById('forca').innerHTML = '<img src="img/forca.png" />'
   document.getElementById('mensagemFim').textContent = ''
   document.getElementById('mensagemOk').textContent = ''
 
@@ -95,7 +96,7 @@ function tecla(tecla, palavra, count, parray) {
   if (!palavra.includes(tecla)) {
     erro++
     document.getElementById('forca').innerHTML =
-      '<img src="forca' + erro + '.png" />'
+      '<img src="img/forca' + erro + '.png" />'
     if (erro == 5) {
       document.getElementById('mensagemFim').innerHTML =
         '<p>Que pena, Fim de Jogo!Tente outra vez</p><p>A palavra correta é: ' +
@@ -112,7 +113,7 @@ function checkLetras(parray, palavra) {
     juntarLetras += document.getElementById('letra' + i).textContent
   }
   if (juntarLetras == palavra) {
-    document.getElementById('forca').innerHTML = '<img src="fim.png" />'
+    document.getElementById('forca').innerHTML = '<img src="img/fim.png" />'
     return true
   } else return false
 }
