@@ -112,7 +112,7 @@ body {
 }
 
 .section .title {
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .section .subtitle {
@@ -269,7 +269,11 @@ nav.show div.icon-close {
 #about .container {
   margin: 0;
 text-align: justify;
- margin-top: 4rem;
+ margin-top: 2rem;
+}
+
+#about{
+  margin-top:-1rem;
 }
 
 #about .image {
@@ -285,10 +289,11 @@ display: flexbox;
   position: relative;
   height: 100%;
   width: 100%;
+ 
 }
 
 #about .image img {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   position: relative;
   height: 15rem;
   width: 15rem;
@@ -301,6 +306,7 @@ display: flexbox;
 #about .image img,
 #about .image::before {
   border-radius: 15rem;
+
 }
 
 #about .curriculo{
