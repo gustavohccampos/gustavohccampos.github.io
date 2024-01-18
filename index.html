@@ -1,301 +1,598 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
-  <head>
-    <!-- PAGE INFO -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gustavohccampos.github.io</title>
+<html lang="en">
 
-    <!-- Icones -->
-    <link rel="stylesheet" href="assets/fonts/style.css" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Swiper -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+  <!--==================== UNICONS ====================-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-    <!-- STYLES -->
-    <link rel="stylesheet" href="style.css" />
+  <!--==================== font-awesome ====================-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header id="header">
-      <nav class="container">
-        <a class="logo" href="#"><span>GustavoHCCampos</span></a>
-        <!-- menu -->
-        <div class="menu">
-          <ul class="grid">
-            <li><a class="title" href="#about">Sobre</a></li>
-            <li><a class="title" href="#services">Portifolio</a></li>
-            <li><a class="title" href="#testimonials">Depoimentos</a></li>
-            <li><a class="title" href="#contact">Contato</a></li>
-          </ul>
-        </div>
-        <!-- /menu -->
-        <div class="toggle icon-menu"></div>
-        <div class="toggle icon-close"></div>
-      </nav>
-    </header>
+  <!--==================== CSS ====================-->
+  <link rel="stylesheet" href="./css/style.css">
 
-    <main>
-      
+  <title>Gustavo H C Campos</title>
+  <link rel="icon" type="imagem/png" href="./img/title.png" />
+</head>
 
-      <div class="divider-1"></div>
-
-      <!-- ABOUT -->
-      <section class="section" id="about">
-        <div class="container">
-          
-        
-          <div class="text">
-            
-            <h2 class="title">Portifólio de Desenvolvimento</h2>
-            <p>
-           
-              Meu nome é Gustavo, sou Graduado em Analise e Desenvolvimento de Sistemas (Faculdade COTEMIG) e também me formei como Técnico em Informatica (Colégio COTEMIG), hoje estou atuando na área de Tecnologia da Informação como Analista Técnico em Suporte, mas tenho o desejo em atua na área de Desenvolvimento de Software.
-            </p>
-            <p>
-            Estou desenvolvendo esta pagina como aprendizado, mas também para divulgar meus conhecimentos adquiridos com os cursos de Desenvolvimento.
-            </p>
-            <br />
-            <div class="curriculo">
-              <p class="button"><a href="https://github.com/gustavohccampos/gustavohccampos.github.io/raw/main/assets/Gustavo_Henrique%20Carvalho%20Campos.pdf">Meu Curriculo em PDF</a></p>
-            </div>
-          
-          </div>
-        </div>
-      </section>
-
-      <div class="divider-2"></div>
-
-      <!-- SERVICES -->
-      <section class="section" id="services">
-        <div class="container grid">
-          <header>
-            <h2 class="title">Portifólio</h2>
-            <p class="subtitle">
-              Esta pagina foi criada com o intuito de disponibilizar como um portifólio meus projetos, ao qual venho desenvolvendo para aprendizado e os inserindo em minha pagina do Github <a href="https://github.com/gustavohccampos/"> <strong>gustavohccampos</strong></a>, para que eu possa demonstrar os conhecimentos adquiridos com os cursos.
-            </p>
-          </header>
-
-          <div class="cards grid">
-          <div class="card">
-            <a href="https://gustavohccampos.github.io/Lista_Tarefas_JS">
-              <img src="assets/fotos/lista_tarefas_js.png" alt="" class="portifolio_img">
-              <h3 class="title">Lista de Tarefas em JavaScript</h3>
-              <p>
-               Lista de Tarefas desenvolvida com HTML, CSS e JS em curso de aprendizado de JS.
-              </p>
+<body>
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">Gustavo H C Campos</a>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list grid">
+          <li class="nav__item">
+            <a href="#home" class="nav__link">
+              <i class="uil uil-estate nav__icon"></i>Home
             </a>
-            </div>
-        
-            <div class="card">
-              <a href="https://gustavohccampos.github.io/Cracha">
-              <img src="assets/fotos/cracha.png" alt="" class="portifolio_img">
-              <h3 class="title">Cracha Virtual em HTML e CSS</h3>
-              <p>
-                Cracha Virtual desenvolvido com os aprendizados do curso da RocketSeat de HTML5 e CSS3.
-              </p>
-              </a>
-            </div>
-
-            <div class="card">
-              <a href="https://github.com/gustavohccampos/JogoForca_Js">
-              
-              <img src="assets/fotos/jogo_forca_js.png" alt="" class="portifolio_img">
-              <h3 class="title">Jogo da Forca em JavaScript</h3>
-              <p>
-                Este Jogo da Forca foi desenvolvido utilizando os conhecimentos adquiridos em alguns cursos, mas com o intuito de não seguir nenhum passo a passo, realizando todo o desenvolvimento de minha cabeça e de como achei que ficaria legal o codigo! Infelizmente o GitHubPages esta com erro para rodar o projeto, mas basta o baixar e abrir com o Live Server!
-              Boa Sorte!
-              </p>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">
+              <i class="uil uil-user nav__icon"></i>About
             </a>
-            </div>
-          
-         
-
-            <div class="card">
-              <a href="https://gustavohccampos.github.io/Calculadora_IMC_JS">
-              <img src="assets/fotos/calculadora_imc_js.png" alt="" class="portifolio_img">
-              <h3 class="title">Calculadora IMC em JS</h3>
-              <p>
-                Calculadora de IMC feita em Javascript com as videos aula da Alura.
-              </p>
+          </li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">
+              <i class="uil uil-briefcase-alt nav__icon"></i>Skills
             </a>
-            </div>
-          
-           
-              <div class="card">
-                <a href="https://gustavohccampos.github.io/Apeperia"> <img src="assets/fotos/apeperia.png" alt="" class="portifolio_img">
-                <h3 class="title">Site Apeperia Alura</h3>
-                <p>
-                  Site desenvolvido no curso da Alura para usabilidade do HTML E CSS juntamente a paginas responsivas.
-                </p></a>
-              </div>
+          </li>
+          <li class="nav__item">
+            <a href="#portfolio" class="nav__link">
+              <i class="uil uil-scenery nav__icon"></i>Portfolio
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">
+              <i class="uil uil-message nav__icon"></i>Contact
+            </a>
+          </li>
+        </ul>
+        <i class="uil uil-times nav__close" id="nav-close"></i>
+      </div>
+      <div class="nav__btns">
+        <!-- Theme change button -->
 
-              <div class="card">
-                <a href="https://gustavohccampos.github.io/Front_End_Alura"> <img src="assets/fotos/alura_front.png" alt="" class="portifolio_img">
-                <h3 class="title">Site Barbearia Alura</h3>
-                <p>
-                  Site desenvolvido no curso da Alura da Formação Front End utilizando HTML e CSS. Também realizei alguns ajustes para tornam o site responsivo a qualquer dispositivo.
-                </p></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        <i class="uil uil-moon change-theme" id="theme-button"></i>
 
-      <div class="divider-1"></div>
-
-      <!-- TESTIMONIALS -->
-      <section class="section" id="testimonials">
-        <div class="container">
-          <header>
-            <h2 class="title">Soft Skills</h2>
-          </header>
-          <div class="testimonials swiper-container">
-            <div class="swiper-wrapper">
-              <div class="testimonial swiper-slide">
-                <blockquote>
-                  <p>
-                    <span>&ldquo;</span>
-                      Atualmente estou realizando um curso da RocketSeat, para aprendizado de HTML - CSS - JavaScript, tenho o conhecimento basico, mas este portifolio ja foi todo desenvolvido com meu aprendizado.
-                  </p>
-                  <cite>
-                    <img
-                      src="assets/fotos/html.jpg"
-                      alt="Foto html"
-                    />
-                    <img
-                      src="assets/fotos/css.png"
-                      alt="Foto css"
-                    />
-                    <img
-                      src="assets/fotos/javascript.png"
-                      alt="Foto javascript"
-                    />
-                    HTML - CSS - JavaScript (Básico)
-                  </cite>
-                </blockquote>
-              </div>
-
-              <div class="testimonial swiper-slide">
-                <blockquote>
-                  <p>
-                    <span>&ldquo;</span>
-                    Pela plataforma Alura tenho realizado os cursos de C#, ao qual tenho também ja efetuado alguns projetos pessoas para aprendizado. Comecei também a realizar as aulas para conhecimento do Asp.Net
-                  </p>
-                  <cite>
-                    <img
-                      src="assets/fotos/csharp.png"
-                      alt="Foto csharp"
-                    />
-                    C# .Net (Básico)
-                  </cite>
-                </blockquote>
-              </div>
-
-              <div class="testimonial swiper-slide">
-                <blockquote>
-                  <p>
-                    <span>&ldquo;</span>
-                    Com curso também da Alura aprendi um pouco mais sobre os bancos de dados, ao qual ja tenho um conhecimento basico pelas materias de faculdade,mas tenho utilizado bastante em meus projetos para o Desenvolvimento dos softwares.
-
-                  </p>
-                  <cite>
-                    <img
-                      src="assets/fotos/sql.jpg"
-                      alt="Fotos de Valeska Fabris"
-                    />
-              
-                    Banco de Dados (Básico)
-                  </cite>
-                </blockquote>
-              </div>
-            </div>
-
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </section>
-
-      <div class="divider-2"></div>
-
-      <!-- CONTACT -->
-      <section class="section" id="contact">
-        <div class="container grid">
-          <div class="text">
-            <h2 class="title">Entre em contato comigo!</h2>
-            <p>
-              Entre em contato.
-            </p>
-            <a
-              href="https://instagram.com/gustavohccampos"
-              class="button"
-              target="_blank"
-              ><i class="icon-instagram"></i> Instagram</a
-            >
-       
-       
-          </div>
-
-          <div class="links">
-            <ul class="grid">
-              <li><i class="icon-phone"></i> 11 1111-1111</li>
-              <li><i class="icon-map-pin"></i> R. teste, 445</li>
-              <li><i class="icon-mail"></i> contato@tesdte.com</li>
-            </ul>
-            <a
-            href="https://api.whatsapp.com/send?phone=+31&text=Oi! Gostaria de agendar um horário"
-            class="button"
-            target="_blank"
-            ><i class="icon-whatsapp"></i> Entrar em contato</a
-          >
-          </div>
-        </div>
-      </section>
-
-      <div class="divider-1"></div>
-    </main>
-
-    <footer class="section">
-      <div class="container grid">
-        <div class="brand">
-          <a class="logo logo-alt" href="#home">gustavo<span>hccampos</span>.</a>
-          <p>©2021 Gustavohccampos.github.io</p>
-          <p>Todos os direitos reservados.</p>
-        </div>
-
-        <div class="social grid">
-          <a href="https://instagram.com" target="_blank">
-            <i class="icon-instagram"></i>
-          </a>
-          <a href="https://facebook.com" target="_blank">
-            <i class="icon-facebook"></i
-          ></a>
-          <a href="https://youtube.com" target="_blank"
-            ><i class="icon-youtube"></i
-          ></a>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="uil uil-apps"></i>
         </div>
       </div>
-    </footer>
+    </nav>
+  </header>
 
-    <a href="#about" class="back-to-top"><i class="icon-arrow-up"></i></a>
+  <!--==================== MAIN ====================-->
+  <main class="main">
+    <!--==================== HOME ====================-->
+    <section class="home section" id="home">
+      <div class="home__container container grid">
 
-    <!-- swiper -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <!-- scrollreveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
 
-    <!-- main.js -->
-    <script src="main.js"></script>
-  </body>
+        <div class="home__content grid">
+
+          <div class="home__social">
+            <a href="https://www.linkedin.com/in/gustavo-henrique-carvalho-campos-8bb7a370/" target="_blank"
+              class="home__social-icon_l">
+              <i class="uil uil-linkedin-alt"></i>
+            </a>
+            <a href="https://www.instagram.com.br/gustavohccampos" target="_blank" class="home__social-icon_i">
+              <i class="uil uil-instagram-alt"></i>
+            </a>
+            <a href="https://twitter.com/gustavohccampos" target="_blank" class="home__social-icon_t">
+              <i class="uil uil-twitter-alt" alt=""></i>
+            </a>
+            <a href="https://github.com/gustavohccampos" target="_blank" class="home__social-icon_g">
+              <i class="uil uil-github-alt"></i>
+            </a>
+          </div>
+
+          <div class="home__img">
+            <div class="home__blob">
+              <img class="home__blob-img" src="./img/profile.jpeg" />
+            </div>
+          </div>
+
+
+          <div class="home__data">
+            <h1 class="home__title">Hi, I'am Gustavo</h1>
+            <h3 class="home__subtitle">Desenvolvedor Junior</h3>
+            <p class="home__description">Bem-vindo(a) à minha jornada de aprendizado e crescimento na arte
+              da programação! Este é meu portfólio de desenvolvedor Junior. Descubra como minhas habilidades pode
+              enriquecer sua equipe!
+            </p>
+            <div class="align-center">
+              <a href="#contact" class="button button--flex home__button  ">
+                Contato<i class="uil uil-message button__icon"></i> </a>
+            </div>
+
+
+          </div>
+        </div>
+
+
+        <!--=======BARRA DE DESCER SCROLL============= 
+        <div class="home__scroll">
+          <a href="#about" class="home__scroll-button button--flex">
+            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+            <span class="home__scroll-name">Scroll Down</span>
+            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+          </a>
+        </div>
+      </div>====================-->
+    </section>
+
+    <!--==================== ABOUT ====================-->
+    <section class="about section" id="about">
+      <h2 class="section__title">About Me</h2>
+      <span class="section__subtitle">My Introduction</span>
+
+      <div class="about__container container grid">
+        <img src="./img/desenvolvedor.png" alt="" class="about__img">
+        <div class="about__data">
+          <p class="about__description">
+            Um desenvolvedor iniciante em busca de desafios e aprendizado constante, apaixonado por transformar ideias
+            em soluções tecnológicas inovadoras.</p>
+          <p class="about__description">
+            Busco oportunidade para realizar uma transição de carreira, me tornando Desenvolvedor Junior.
+          </p>
+          <div class=" about__info">
+            <div class="about__buttons">
+              <a download="" href="./pdf/Gustavo Henrique Carvalho Campos DevJr.pdf" class="button button--flex">
+                Download CV<i class="uil uil-download-alt button__icon"></i>
+              </a>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <!--==================== QUALIFICATION INICIO====================-->
+    <section class="qualification__section">
+      <h2 class="section__title">Qualification</h2>
+      <span class="section__subtitle">My personal journey</span>
+
+      <div class="qualification__container container">
+        <div class="qualification__tabs">
+          <div class="qualification__button button--flex qualification__active" data-target='#education'>
+            <i class="uil uil-graduation-cap qualification__icon"></i>
+            Education
+          </div>
+
+          <div class="qualification__button button--flex" data-target="#work">
+            <i class="uil uil-briefcase-alt qualification__icon"></i>
+            Work
+          </div>
+        </div>
+
+        <div class="qualification__sections">
+          <!--==================== QUALIFICATION CONTENT 1 ====================-->
+          <div class="qualification__content qualification__active" data-content id="education">
+            <!--==================== QUALIFICATION 1 ====================-->
+            <div class="qualification__data">
+              <div>
+                <h3 class="qualification__title">Analise e Desenvolvimento de Sistemas</h3>
+                <span class="qualification__subtitle">Faculdade COTEMIG </span>
+                <div class="qualification__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2011 - 2014
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+            </div>
+
+            <!--==================== QUALIFICATION 2 ====================-->
+            <div class="qualification__data">
+              <div></div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+
+              <div>
+                <h3 class="qualification__title">Curso Tecnico em Informatica</h3>
+                <span class="qualification__subtitle">Colegio COTEMIG</span>
+                <div class="qualification__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2009 - 2010
+                </div>
+              </div>
+            </div>
+
+            <!--==================== QUALIFICATION FIM ====================-->
+            <div class="qualification__data">
+              <div></div>
+              <div>
+                <span class="qualification__rounder"></span>
+              </div>
+            </div>
+          </div>
+
+          <!--==================== FIM EDUCATION ====================-->
+
+
+
+          <!--==================== QUALIFICATION WORK ====================-->
+          <div class="qualification__content" data-content id="work">
+            <!--==================== QUALIFICATION WORK 1 ====================-->
+            <div class="qualification__data">
+              <div>
+                <h3 class="qualification__title">Analise de Suporte</h3>
+                <span class="qualification__subtitle">TOTVS S.A. </span>
+                <div class="qualification__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2019 - Present
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+            </div>
+            <!--==================== QUALIFICATION WORK 2 ====================-->
+            <div class="qualification__data">
+              <div></div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+
+              <div>
+                <h3 class="qualification__title">Tecnico em Informatica </h3>
+                <span class="qualification__subtitle">MGS - Minas Gerais Administração e Serviços S.A.</span>
+                <div class="qualification__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2010 - 2019
+                </div>
+              </div>
+            </div>
+
+            <!--==================== QUALIFICATION WORK FIM ====================-->
+            <div class="qualification__data">
+              <div></div>
+              <div>
+                <span class="qualification__rounder"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      </div>
+    </section>
+
+    <!--==================== SERVICES ====================-->
+    <section class="services section" id="services">
+      <h2 class="section__title">Skills</h2>
+      <span class="section__subtitle">What I Can</span>
+
+      <div class="services__container container grid">
+        <!--==================== SERVICES 1 ====================-->
+        <div class="services__content">
+          <div>
+            <img alt="" class="imgSkill html5">
+            <img alt="" class="imgSkill css3">
+            <img alt="" class="imgSkill javascript">
+            <img alt="" class=" imgSkill bootstrap">
+            <img alt="" class="imgSkill angular">
+
+            <h3 class="services__title">FrontEnd Junior<br> </h3>
+          </div>
+          <span class="button button--flex button--small button--link services__button">
+            View more
+            <i class="uil uil-arrow-right button__icon"></i>
+          </span>
+
+          <div class="services__modal">
+            <div class="services__modal-content">
+              <h4 class="services__modal-title">FrontEnd Junior <br></h4>
+              <i class="uil uil-times services__modal-close"></i>
+
+              <ul class="services__modal-services grid">
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p>HTML/CSS Proficiente: Domínio na criação e estilização de páginas web.</p>
+                </li>
+
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p>JavaScript Básico: Conhecimento em manipulação do DOM e lógica básica.</p>
+                </li>
+
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p>Design Responsivo: Habilidade para criar interfaces adaptáveis a diferentes dispositivos.</p>
+                </li>
+
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p>Frameworks e Bibliotecas Front-end: Uso de ferramentas como Angular, Bootstrap e jQuery.</p>
+                </li>
+
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p>Noções Básicas de UX/UI: Compreensão básica de design de usuário e interface.</p>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--==================== SERVICES 2 ====================-->
+        <div class="services__content">
+          <div>
+            <img alt="" class="imgSkill csharp">
+            <img alt="" class="imgSkill python">
+            <!--  <img alt="" class="imgSkill php">-->
+            <img alt="" class="imgSkill node">
+
+            <h3 class="services__title">BackEnd Junior<br> </h3>
+          </div>
+          <span class="button button--flex button--small button--link services__button">
+            View more
+            <i class="uil uil-arrow-right button__icon"></i>
+          </span>
+
+          <div class="services__modal">
+            <div class="services__modal-content">
+              <h4 class="services__modal-title">BackEnd Junior<br></h4>
+              <i class="uil uil-times services__modal-close"></i>
+
+              <ul class="services__modal-services grid">
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p>Linguagem de Programação: Conhecimento básico em linguagens back-end, como C#, Python e Node.js.
+                  </p>
+                </li>
+
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p>Lógica de Programação: Capacidade de desenvolver algoritmos simples e resolver problemas.
+                  </p>
+                </li>
+
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p>Conceitos Básicos de APIs: Compreensão elementar sobre criação e consumo de APIs para integração de
+                    serviços.</p>
+                </li>
+
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p>Banco de Dados: Noções básicas de sistemas de banco de dados.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!--==================== SERVICES 3 ====================-->
+        <div class="services__content">
+          <div>
+            <img alt="" class="imgSkill sql">
+            <img alt="" class="imgSkill mysql">
+            <img alt="" class="imgSkill github">
+
+            <h3 class="services__title">Others<br></h3>
+          </div>
+          <span class="button button--flex button--small button--link services__button">
+            View more
+            <i class="uil uil-arrow-right button__icon"></i>
+          </span>
+
+          <div class="services__modal">
+            <div class="services__modal-content">
+              <h4 class="services__modal-title">Others<br></h4>
+              <i class="uil uil-times services__modal-close"></i>
+
+              <ul class="services__modal-services grid">
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p>Controle de Versão (Git): Familiaridade com Git para o gerenciamento de código.</p>
+                </li>
+
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p>Banco de Dados: Noções básicas de sistemas de banco de dados, como MySQL, SQLSERVER ou SQLite.</p>
+                </li>
+
+
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!--==================== PORTFOLIO ====================-->
+    <section class="portfolio section" id="portfolio">
+
+      <h2 class="section__title">Portfolio</h2>
+      <span class="section__subtitle">Most recent works</span>
+
+
+      <!--==================== PORTFOLIO 1 ====================-->
+
+      <div class="portfolio__content grid">
+
+        <div class="portfolio__content_bloco">
+          <img src="./img/portifolio1.png" alt="" class="portfolio__img">
+
+          <h3 class="portfolio__title">Jogo da Forca JavaScript</h3>
+          <p class="portfolio__description">Este jogo da forca foi criado para fins academicos para aprendizado de
+            palavras em Ingles juntamento com HTML5, CSS3 e JavaScript. Neste jogo desafiador, o jogador deve acertar as
+            letras de palavras em outro idioma.</p>
+          <p><img alt="" class="imgSkill html5"><img alt="" class="imgSkill css3"><img alt=""
+              class="imgSkill javascript"></p>
+          <a href="https://jogo-forca-js.vercel.app/"
+            class="button button--flex button--small portfolio__button align-center" target="_blank">
+            Demo
+            <i class="uil uil-arrow-right button__icon"></i>
+          </a>
+
+        </div>
+        <div class="portfolio__content_bloco">
+          <img src="./img/portifolio2.png" alt="" class="portfolio__img">
+          <h3 class="portfolio__title">Lista de Tarefas JavaScript</h3>
+          <p class="portfolio__description">Lista de Tarefas desenvolvida com HTML, CSS e JS em curso de aprendizado de
+            JS.</p>
+          <p><img alt="" class="imgSkill html5"><img alt="" class="imgSkill css3"><img alt=""
+              class="imgSkill javascript"></p>
+          <a href="https://lista-tarefas-java-script.vercel.app/"
+            class="button button--flex button--small portfolio__button align-center" target="_blank">
+            Demo
+            <i class="uil uil-arrow-right button__icon"></i>
+          </a>
+        </div>
+
+
+        <div class="portfolio__content_bloco">
+          <img src="./img/portifolio3.png" alt="" class="portfolio__img">
+
+          <h3 class="portfolio__title">Calculadora de IMC em JS</h3>
+          <p class="portfolio__description">Este foi um projeto rapido de aprendizado de HTML,CSS e JavaScript
+            colocando em pratica com base em um curso online.
+          </p>
+          <p><img alt="" class="imgSkill html5"><img alt="" class="imgSkill css3"><img alt=""
+              class="imgSkill javascript"></p>
+          <a href="https://calculadora-imc-js-beige.vercel.app/"
+            class="button button--flex button--small portfolio__button align-center" target="_blank">
+            Demo
+            <i class="uil uil-arrow-right button__icon"></i>
+          </a>
+
+        </div>
+
+
+
+
+
+      </div>
+
+      <!--==================== FIM PORTFOLIO ====================-->
+
+
+
+
+      </div>
+      </div>
+
+    </section>
+
+
+
+    <!--==================== CONTACT ME ====================-->
+    <section class="contact section" id="contact">
+      <h2 class="section__title">Contact me</h2>
+      <span class="section__subtitle">Formas de Contato</span>
+
+      <div class="align-center">
+        <div class="contact__container container ">
+          <div>
+            <div class="contact__information">
+              <i class="uil uil-phone-alt contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Call me</h3>
+                <span class="contatc__subtitle">(+55) 31 975160943</span>
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-envelope contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">E-mail</h3>
+                <span class="contatc__subtitle">gustavohccampos@gmail.com</span>
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-map-marker contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Location</h3>
+                <span class="contatc__subtitle">BH, Minas Gerais, Brasil</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--==================== FOOTER ====================-->
+  <footer class="footer">
+
+    <div class="footer__bg">
+      <div class="footer__container container grid">
+        <div>
+          <h1 class="footer__title">Gustavo H C Campos</h1>
+          <span class="footer__subtitle">Desenvolvedor Junior</span>
+          <div class="footer__socials">
+            <a href="https://www.linkedin.com/in/gustavo-henrique-carvalho-campos-8bb7a370/" target="_blank"
+              class="home__social-icon_l">
+              <i class="uil uil-linkedin-alt"></i>
+            </a>
+            <a href="https://www.instagram.com.br/gustavohccampos" target="_blank" class="home__social-icon_i">
+              <i class="uil uil-instagram-alt"></i>
+            </a>
+            <a href="https://twitter.com/gustavohccampos" target="_blank" class="home__social-icon_t">
+              <i class="uil uil-twitter-alt" alt=""></i>
+            </a>
+            <a href="https://github.com/gustavohccampos" target="_blank" class="home__social-icon_g">
+              <i class="uil uil-github-alt"></i>
+            </a>
+          </div>
+        </div>
+
+        <ul class="footer__links">
+          <li>
+            <a href="#skills" class="footer__link">Skills</a>
+          </li>
+          <li>
+            <a href="#services" class="footer__link">Services</a>
+          </li>
+          <li>
+            <a href="#portfolio" class="footer__link">Portfolio</a>
+          </li>
+          <li>
+            <a href="#contact" class="footer__link">Contact</a>
+          </li>
+        </ul>
+
+
+      </div>
+    </div>
+  </footer>
+
+  <!--==================== SCROLL TOP ====================-->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="uil uil-arrow-up scrollup__icon"></i>
+  </a>
+
+
+  <!--==================== SWIPER JS ====================-->
+  <script src="./js/swiper-bundle.min.js"></script>
+
+  <!--==================== MAIN JS ====================-->
+  <script src="./js/script.js"></script>
+</body>
+
 </html>
