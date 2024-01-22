@@ -653,11 +653,8 @@ img {
 }
 
 .portfolio__content {
-  padding: 0 1.3rem;
-  margin-left: 2rem;
-  margin-right: 4rem;
+  padding: 0 2rem;
   text-align: center;
-   align-items: center;
 }
 
 .portfolio__content_bloco {
