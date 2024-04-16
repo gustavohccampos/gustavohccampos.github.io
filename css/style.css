@@ -653,8 +653,12 @@ img {
 }
 
 .portfolio__content {
-  padding: 0 2rem;
+  padding: 0 1.3rem;
+  align-items: center;
   text-align: center;
+  margin-left: 3%;
+  margin-right: 3%;
+
 }
 
 .portfolio__content_bloco {
@@ -1220,6 +1224,32 @@ content:  url(../img/php\ \(1\).png);
  .github{
 content:  url(../img/github.png);
 }
-            
+    
+.net{
+  content:  url(../img/net.png);
+  }
+    
   
-              
+  #overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+  }
+  
+  .portfolio__img {
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .portfolio__img.zoomed {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2.1);
+    z-index: 10000;
+  }
